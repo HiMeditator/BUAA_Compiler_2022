@@ -1,0 +1,16 @@
+int main(){
+    int a,b;
+    a=getint();
+    b=getint();
+    printf("20373981\n");
+    printf("%d\n",a+b);
+    printf("L03\n");
+    printf("L04\n");
+    printf("L05\n");
+    printf("L06\n");
+    printf("L07\n");
+    printf("L08\n");
+    printf("L09\n");
+    printf("L10\n");
+    return 0;
+}

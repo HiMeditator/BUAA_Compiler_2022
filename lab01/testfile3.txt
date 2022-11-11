@@ -1,0 +1,42 @@
+const int STU_ID=20373981;
+const int STU_GRADE=89;
+int n,sum;
+void print2Nums(int num1,int num2){
+    printf("%d\n%d\n",num1,num2);
+}
+int calcFact(int n){//Calc n!
+    int ret=2,i=1;
+    if(n<2) return 1;
+    while(i<n){
+        i=i+1;
+        if(i==2) continue;
+        if(i>12) break;
+        ret=ret*i;
+    }
+    return ret;
+}
+int returnTrue(){
+    return 1;
+}
+int returnFalse(){
+    return 0;
+}
+int main(){
+    int m,arr[6]={1,2,3,4,5,6};
+    int arr2[2][3]={{0,1,4},{2,3,4}};
+    m=getint();
+    if(m<5) n=m*m;
+    else n=m;
+    {
+        /*Null Block*/
+    }
+    print2Nums(STU_ID,20220911);
+    print2Nums(STU_GRADE,calcFact(n));
+    if(233) printf("%d\n",arr[0]);
+    if((1+2)) printf("%d\n",arr[1]);
+    if(m || !arr[2] || arr2[0][0]) printf("%d\n",arr[2]);
+    if(returnTrue() && arr2[1][1]) printf("%d\n",arr[3]);
+    if(returnTrue()<2 || returnFalse()>=2-2) printf("%d\n",arr[4]);
+    if(0&&1 || 2&&3) printf("%d\n",arr[5]);
+    return 0;
+}

@@ -1,0 +1,57 @@
+const int STU_ID=20373981;
+const int STU_GRADE=100;
+const int CARR[3]={1,1+1,1+1*2};
+int n,sum;
+void print2Nums(int num1,int num2){
+    printf("%d\nNum2=%d\n",num1,num2);
+    return;
+}
+int calcFact(int n){//Calc n!
+    int ret=2,i=1;
+    sum=3;
+    if(n<2) return 1;
+    while(i<n){
+        i=i+1;
+        if(i==2) continue;
+        if(i>12){
+            printf("N=%d is to big,break!\n",n);
+            break;
+        }
+        ret=ret*i;
+        sum=sum+ret;
+    }
+    return ret;
+}
+int getTrue(){
+    return 1;
+}
+int getFalse(){
+    return 0;
+}
+/*int getInt(){
+     return getint();
+}*/
+int main(){
+    int m,arr[6]={1,2,3,4,5,6};
+    int arr2[2][2]={{0,1},{2,3}};
+    m=getint();
+    if(m<5) n=m*m;
+    else n=m;
+    {
+        /*Not Null Block*/
+        {
+            int n;
+        }
+    }
+    print2Nums(STU_ID,STU_GRADE);
+    print2Nums(calcFact(n),sum);
+    if(233 || !0) printf("%d\n",arr[0]);
+    if(1+2-3 && getTrue()) {}
+    if(m!=233 && m==233) ;
+    if(2<3 && 3>2) printf("%d\n",arr[1]+2*2-4);
+    if(2<=3 || 3>=2) printf("%d\n",arr[2]);
+    if(12*21/7==36 && 9%7>getTrue()) printf("%d\n",arr[3]);
+    if(40*50+calcFact(5) && calcFact(6)!=720) printf("%d\n",arr[4]);
+    if(getTrue()<=getFalse()*calcFact(n)) printf("%d\n",arr[5]);
+    return 0;
+}

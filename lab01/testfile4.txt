@@ -1,0 +1,43 @@
+const int STU_ID = 20373981;
+void printNum(int num){
+    printf("%d\n",num);
+}
+void printArr(int arr[]){
+    int i=0;
+    while(arr[i]>0){
+        printf("%d\n",arr[i]);
+        i=i+1;
+    }
+}
+int calcFib(int n){
+    int pre=1,cur=1,cnt=2;
+    if(n<=0){
+        cur=-1;
+    } 
+    if(n==1 || n==2){
+        cur=1;
+    }
+    else{
+        while(cnt<n){
+            int tmp=cur;
+            cur=cur+pre;
+            pre=tmp;
+            cnt=cnt+1;
+        }
+    }
+    return cur;
+}
+int main(){
+    int arr[4]={20,22,14,-1};
+    int n;
+    n=getint();
+    printNum(STU_ID);
+    printf("%d\n",calcFib(0));
+    printf("%d\n",calcFib(1));
+    printf("%d\n",calcFib(2));
+    printf("%d\n",calcFib(4));
+    printf("%d\n",calcFib(8));
+    printf("Fib(%d)=%d\n",n,calcFib(n));
+    printArr(arr);
+    return 0;
+}

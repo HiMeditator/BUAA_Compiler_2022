@@ -1,0 +1,10 @@
+2 k
+3 k
+4 k
+5 k
+7 k
+L-7
+stmt at L 8
+line 8
+,
+11 k

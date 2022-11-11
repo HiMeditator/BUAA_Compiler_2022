@@ -1,0 +1,21 @@
+int cnt;
+int main(){
+    int arr[4]={0,0,0,0};
+    int i=0,j=0;
+    while(i<4){
+        arr[i]=getint();
+        i=i+1;
+    }
+    if(2+2==5 || arr[0]==0){
+        printf("2037981\n");
+    }
+    printf("%d\n",arr[0]);
+    printf("%d\n",arr[1]);
+    printf("%d\n",arr[2]);
+    printf("%d\n",arr[3]);
+    while(j<5){
+        j=j+1;
+        printf("%d\n",j*j);
+    }
+    return 0;
+}

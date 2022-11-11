@@ -1,0 +1,10 @@
+20373981
+Num2=100
+N=233 is to big,break!
+479001600
+Num2=0
+1
+2
+3
+4
+N=233 is to big,break!

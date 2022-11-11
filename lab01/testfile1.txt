@@ -1,0 +1,81 @@
+const int STU_ID=20373981,STU_GRADE=100;
+const int A=1,AA=11,AAA=111;
+const int CARR[3]={1,1+1,1+1*2};
+const int A2[2][2]={{11,22},{33,44}};
+int n,sum;
+void print2Nums(int num1,int num2){
+    printf("Num1=%d\nNum2=%d\n",num1,num2);
+    return;
+}
+int calcFact(int n){//Calc n!
+    int ret=2,i=1;
+    sum=3;
+    if(n<2) return 1;
+    while(i<n){
+        i=i+1;
+        if(i==2) continue;
+        if(i>12){
+            printf("N=%d is to big,break!\n",n);
+            break;
+        }
+        ret=ret*i;
+        sum=sum+ret;
+    }
+    return ret;
+}
+int getTrue(){
+    return 1;
+}
+// int getInt(){
+//     return getint();
+// }
+void printArr(int n,int arr[]){
+    int i=0;
+    while(i<n-1){
+        printf("%d,",arr[i]);
+        i=i+1;
+    }
+    printf("%d\n",arr[i]);
+    return;
+    printf("Finished.\n");
+}
+void printArr2(int n,int m,int arr[][4]){
+    int i=0,j;
+    while(i<n){
+        j=0;
+        while(j<m-1){
+            printf("%d,",arr[i][j]);
+            j=j+1;
+        }
+        printf("%d\n",arr[i][j]);
+        i=i+1;
+    }
+}
+int getArr00(int arr[][4]){
+    return arr[0][0];
+}
+int getSumArr00(int n,int arr[],int arr2[][4]){
+    return n+arr[0]+arr2[0][0];
+}
+int main(){
+    const int STU_GRADE=89+11;
+    int m,arr[6]={1,2,3,4,5,6};
+    int arr2[2][4]={{0,1,2,3},{4,5,6,7}};
+    int arr_[3]={CARR[0],CARR[1],CARR[2]};
+    m=getint();
+    if(m<5) n=m*m;
+    else n=m;
+    {
+        /*Null Block*/
+    }
+    print2Nums(STU_ID,STU_GRADE);
+    printArr(4+getArr00(arr2),arr);
+    printArr(3,arr_);
+    printArr2(2,4,arr2);
+    if(2*3-6 || 9/2%3+getTrue() || -2) printf("%d\n",arr[0]+getArr00(arr2));
+    if(calcFact(m) || getTrue()-1 || +3) {}
+    if(n==24 && n!=calcFact(4)) ;
+    if(1+1<CARR[2]&&3>2 || 2<=3&&2>=3) printf("%d\n",arr[2]*getSumArr00(2,arr2[0],arr2));
+    if(2&&getTrue()==1 || !getArr00(arr2) || 2&&!1) printf("It Ends.");
+    return 0;
+}

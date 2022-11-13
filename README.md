@@ -7,9 +7,5 @@ A Toy Compiler that translates SysY to MIPS, written by C++ for Compiler Technol
 Compile Instruction:
 
 ```
-g++ -std=c++11 -O2 -lm -Wall {cppfile.cpp} [target.exe]
+g++ -std=c++11 -O2 -lm -Wall {cppfile.cpp} [-o target.exe]
 ```
-
----
-
-In memory of my striving days
